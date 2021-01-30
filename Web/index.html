@@ -39,7 +39,7 @@
     <header class="header">
       <div class="container">
         <a href="index.html" class="grid-4"
-          ><img src="img/Logotipo-1.png" alt="Divulga Aí"
+          ><img src="img/Logotipo.png" alt="Divulga Aí"
         /></a>
         <nav class="grid-12 header_menu">
           <ul>
@@ -70,118 +70,102 @@
     <!-- Final da introdução -->
 
     <!-- Abre anuncios -->
-    <section class="anuncio container fadeInDown" data-anime="1600">
+    <section class="anuncio fadeInDown" data-anime="1600">
       <h2 class="subtitulo">Anúncios</h2>
-      <ul class="anuncio_lista">
-        <li class="grid-8">
-          <div class="anuncio_image">
+      <div class="container" data-slide="anuncios">
+        <ul class="anuncio_lista">
+          <li class="grid-8 anuncio_image">
             <img src="img/anuncios/anuncio_01.jpg" alt="DivulgaAí anuncio_1" />
-          </div>
-          <!-- <h3>Anuncio 01</h3>
-          <p>
-            Ainda assim, mesmo que tudo esteja perdido, sempre haverá esperança
-            e um novo amanhã.
-          </p> -->
-        </li>
-        <li class="grid-8">
-          <div class="anuncio_image">
+          </li>
+          <li class="grid-8 anuncio_image">
             <img src="img/anuncios/anuncio_02.jpg" alt="DivulgaAí anuncio_2" />
-          </div>
-          <!-- <h3>Anuncio 02</h3>
-          <p>
-            Ainda assim, mesmo que tudo esteja perdido, sempre haverá esperança
-            e um novo amanhã.
-          </p> -->
-        </li>
-        <li class="grid-8">
-          <div class="anuncio_image">
+          </li>
+          <li class="grid-8 anuncio_image">
             <img src="img/anuncios/anuncio_03.jpg" alt="DivulgaAí anuncio_3" />
-          </div>
-          <!-- <h3>Anuncio 03</h3>
-          <p>
-            Ainda assim, mesmo que tudo esteja perdido, sempre haverá esperança
-            e um novo amanhã.
-          </p> -->
-        </li>
-        <li class="grid-8">
-          <div class="anuncio_image">
+          </li>
+          <li class="grid-8 anuncio_image">
             <img src="img/anuncios/anuncio_04.jpg" alt="DivulgaAí anuncio_4" />
-          </div>
-         <!-- <h3>Anuncio 04</h3>
-          <p>
-            Ainda assim, mesmo que tudo esteja perdido, sempre haverá esperança
-            e um novo amanhã.
-          </p> -->
-        </li>
-        <li class="grid-8">
-          <div class="anuncio_image">
+          </li>
+        </ul>
+        <ul class="anuncio_lista">
+          <li class="grid-8 anuncio_image">
             <img src="img/anuncios/anuncio_05.jpg" alt="DivulgaAí anuncio_5" />
-          </div>
-          <!-- <h3>Anuncio 05</h3>
-          <p>
-            Ainda assim, mesmo que tudo esteja perdido, sempre haverá esperança
-            e um novo amanhã.
-          </p> -->
-        </li>
-        <li class="grid-8">
-          <div class="anuncio_image">
+          </li>
+          <li class="grid-8 anuncio_image">
             <img src="img/anuncios/anuncio_06.jpg" alt="DivulgaAí anuncio_6" />
-          </div>
-          <!-- <h3>Anuncio 06</h3>
-          <p>
-            Ainda assim, mesmo que tudo esteja perdido, sempre haverá esperança
-            e um novo amanhã.
-          </p> -->
-        </li>
-      </ul>
+          </li>
+          <li class="grid-8 anuncio_image">
+            <img src="img/anuncios/anuncio_01.jpg" alt="DivulgaAí anuncio_1" />
+          </li>
+          <li class="grid-8 anuncio_image">
+            <img src="img/anuncios/anuncio_02.jpg" alt="DivulgaAí anuncio_2" />
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- Fecha anuncios -->
 
-
     <section class="orcamento">
-			<div class="container">
-				<h2 class="subtitulo">Orçamento</h2>
-				<form id="form_orcamento" method="POST" action="./enviar.php" class="form grid-8 formphp">
-					<label for="nome">Nome</label>
-					<input type="text" id="nome" name="nome" required>
-					<label for="email">E-mail</label>
-					<input type="email" id="email" name="email" required>
-					<label for="telefone">Telefone</label>
-					<input type="text" id="telefone" name="telefone">
+      <div class="container">
+        <h2 class="subtitulo">Orçamento</h2>
+        <form
+          id="form_orcamento"
+          method="POST"
+          action="./enviar.php"
+          class="form grid-8 formphp"
+        >
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required />
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required />
+          <label for="telefone">Telefone</label>
+          <input type="text" id="telefone" name="telefone" />
 
-					<label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
-					<input type="text" class="nao-aparece" name="leaveblank">
-					<label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
-					<input type="text" class="nao-aparece" name="dontchange" value="http://">
+          <label class="nao-aparece"
+            >Se você não é um robô, deixe em branco.</label
+          >
+          <input type="text" class="nao-aparece" name="leaveblank" />
+          <label class="nao-aparece"
+            >Se você não é um robô, não mude este campo.</label
+          >
+          <input
+            type="text"
+            class="nao-aparece"
+            name="dontchange"
+            value="http://"
+          />
 
-					<label for="mensagem">Mensagem</label>
-					<textarea id="mensagem" name="mensagem" required></textarea>
-					<button id="enviar" name="enviar" type="submit" class="btn">Enviar</button>
-				</form>
-				
-				<div class="orcamento_dados grid-8">
-					<h3>Dados</h3>
-					<span>+55 21 93223 3232</span>
-					<span>orcamento@bikcraft.com</span>
-					<h3>Monte a sua Bikcraft</h3>
-					<p>Escolha as especificações:</p>
-					<ul>
-						<li>- Cores</li>
-    				<li>- Estilo</li>
-    				<li>- Medidas</li>
-   					<li>- Acessórios</li>
-    				<li>- E Outros</li>
-					</ul>
-				</div>
-			</div>
-		</section>
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+          <button id="enviar" name="enviar" type="submit" class="btn">
+            Enviar
+          </button>
+        </form>
+
+        <div class="orcamento_dados grid-8">
+          <h3>Dados</h3>
+          <span>+55 21 93223 3232</span>
+          <span>contato@divulgaai.com</span>
+          <h3>Monte o seu Anúncio</h3>
+          <p>Escolha as especificações:</p>
+          <ul>
+            <li>- Cores</li>
+            <li>- Estilo</li>
+            <li>- Medidas</li>
+            <li>- Acessórios</li>
+            <li>- E Outros</li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section class="quebra">
-        <blockquote class="quote-externo container">
-            <p>
-                “o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”
-            </p>
-            <cite>WILLIAM MORRIS</cite>
-        </blockquote>
+      <blockquote class="quote-externo container">
+        <p>
+          “o verdadeiro segredo da felicidade está em ter um genuíno interesse
+          por todos os detalhes da vida cotidiana.”
+        </p>
+        <cite>WILLIAM MORRIS</cite>
+      </blockquote>
     </section>
 
     <footer>
@@ -240,5 +224,11 @@
         </div>
       </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/simple-slide.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- JavaScript -->
   </body>
 </html>
