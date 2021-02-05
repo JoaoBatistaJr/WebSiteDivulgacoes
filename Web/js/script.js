@@ -26,3 +26,21 @@ if(window.SimpleForm) {
 	  sucesso: "<div id='form-sucesso'><h2>Formulário enviado com sucesso</h2><p>Em breve eu entro em contato com você.</p></div>", // mensagem de sucesso
 	});
 }
+
+const menuItens = document.querySelectorAll('.introducao a[href^="#"]');
+
+menuItens.forEach(item => {
+	item.addEventListener('click', scrollToIdOnClick);
+})
+
+function scrollToIdOnClick(event){
+	event.preventDefault();
+	const element = event.target;
+	const id = element.getAttribute('href');
+	const to = document.querySelector(id).offsetTop;
+}
+
+window.scroll({
+	top: to,
+	behavior: "smooth",
+});
