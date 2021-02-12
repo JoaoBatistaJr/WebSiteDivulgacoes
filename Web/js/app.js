@@ -3,7 +3,7 @@
 // Verificar a distância entre o alvo e o topo
 // Animar o scroll até o alvo
 
-const menuItems = document.querySelectorAll('.orcamento a[href^="#"]');
+const menuItems = document.querySelectorAll('.orcamento a');
 
 menuItems.forEach(item => {
   item.addEventListener('click', scrollToIdOnClick);
