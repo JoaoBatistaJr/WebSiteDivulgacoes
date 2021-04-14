@@ -10,7 +10,7 @@
     }
     /*Footer*/
     .footer_redes ul li a {
-        border: 3px solid #fec63e;
+        border: 3px solid #FFEB3B;
         display: block;
         padding: 6px;
     }
@@ -38,6 +38,11 @@
     }
     .anuncio_image img {
         height: 320px;
+    }
+    /* TEMPORARIO */
+    .foto-equipe img {
+        width: 100%;
+        height: 250px;
     }
 }
 
@@ -111,7 +116,7 @@
     }
     /* TEMPORARIO */
     .foto-equipe img {
-        width: 100%;
+        width: 110%;
         height: 150px;
     }
     /* TEMPORARIO */
